@@ -5,7 +5,11 @@ import com.victorp.model.User;
 import java.util.List;
 
 public interface UserDao {
-     List<User> getUserbyid(Long id);
-     List<User> getAllUser();
+     User getUserById(Long id);
+     User createUser(User user);
+     User getUserEmailAndPassword(String email, String pass);
+     User validateData(String email, String password);
+     void updateUser(User user);
+     User logOut(String username);
 
 }

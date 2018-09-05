@@ -1,0 +1,70 @@
+body {
+    background-image: url("/images/background-regist.jpg");
+    background-size: 100% 100%;
+}
+
+.form {
+    border: 3px solid lawngreen;
+    border-radius: 5px;
+    width: 45%;
+    height: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    background-color: #81F7F3;
+    opacity: 0.5;
+}
+.form:hover {
+    opacity: 1;
+}
+
+label {
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+
+h1 {
+    text-align: center;
+
+}
+
+input[type=text] {
+    width: 50%;
+    border: 2px solid grey;
+    margin: 5px 15px;
+    padding: 5px 10px;
+    background-color: #F5F6CE;
+}
+
+input[type=email] {
+    width: 50%;
+    border: 2px solid grey;
+    margin: 5px 15px;
+    padding: 5px 10px;
+    background-color: #F5F6CE;
+
+}
+
+input[type=text]:hover {
+    border: 2px solid #FA5858;
+}
+
+input[type=email]:hover {
+    border: 2px solid #FA5858;
+}
+
+
+.signup {
+    border: 3px solid #FFFF00;
+    width: 15%;
+    height: 10%;
+    background-color: #5882FA;
+    margin: 0px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.signup:hover {
+    background-color: #D0FA58;
+}

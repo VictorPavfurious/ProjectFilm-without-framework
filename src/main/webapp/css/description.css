@@ -1,0 +1,118 @@
+body {
+    background-color: #E6E6E6;
+}
+
+.d1 {
+    border: 2px solid black;
+    width: 50%;
+    float: right;
+    padding: 10px;
+    margin-right: 250px;
+    margin-top: 20px;
+}
+
+.d2 {
+    border: 2px solid black;
+    width: 50%;
+    float: right;
+    padding: 10px;
+    margin-right: 250px;
+    margin-top: 20px;
+}
+
+.d3 {
+    border: 2px solid black;
+    width: 50%;
+    float: right;
+    padding: 10px;
+    margin-right: 250px;
+    margin-top: 20px;
+}
+
+.d4{
+    border: 2px solid black;
+    width: 50%;
+    float: right;
+    padding: 10px;
+    margin-right: 250px;
+    margin-top: 20px;
+}
+
+.d5 {
+    border: 2px solid black;
+    width: 50%;
+    float: right;
+    padding: 10px;
+    margin-right: 250px;
+    margin-top: 20px;
+}
+
+.d6{
+    border: 2px solid black;
+    width: 50%;
+    float: right;
+    padding: 10px;
+    margin-right: 250px;
+    margin-top: 20px;
+}
+
+.image1 {
+    border: 3px solid blue;
+    width: 25%;
+    height: 60%;
+    background-image: url("/images/panthera.png");
+    background-size: 100% 100%;
+    margin: 25px;
+
+}
+
+.image2 {
+    border: 3px solid #00FF40;
+    width: 25%;
+    height: 60%;
+    background-image: url("/images/slow-west.jpg");
+    background-size: 100% 100%;
+    margin: 25px;
+
+}
+
+.image3 {
+    border: 3px solid #DA81F5;
+    width: 25%;
+    height: 60%;
+    background-image: url("/images/ex-machina.jpg");
+    background-size: 100% 100%;
+    margin: 25px;
+
+}
+
+.image4 {
+    border: 3px solid #F4FA58;
+    width: 25%;
+    height: 60%;
+    background-image: url("/images/super=troops.jpg");
+    background-size: 100% 100%;
+    margin: 25px;
+
+}
+
+.image5 {
+    border: 3px solid blue;
+    width: 25%;
+    height: 60%;
+    background-image: url("/images/amy.jpg");
+    background-size: 100% 100%;
+    margin: 25px;
+
+}
+
+.image6 {
+    border: 3px solid orangered;
+    width: 25%;
+    height: 60%;
+    background-image: url("/images/the-flash.jpg");
+    background-size: 100% 100%;
+    margin: 25px;
+
+}
+

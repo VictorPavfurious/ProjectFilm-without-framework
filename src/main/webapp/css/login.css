@@ -1,0 +1,46 @@
+body {
+    background-image: url("/images/background.jpg");
+}
+#loginborder {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 4px solid midnightblue;
+    background-color: cornflowerblue;
+    font-size: 30px;
+    width: 600px;
+    height: 400px;
+    opacity:  0.6;
+    padding-left: 50px;
+}
+
+.field {
+    clear: both;
+    text-align: right;
+}
+
+.login {
+    float: left;
+}
+
+
+.button {
+    border: 2px solid #2EFEF7;
+    border-radius: 5px;
+    background-color: darkblue;
+    font-size: 25px;
+    color: wheat;
+    padding: 8px 6px;
+}
+
+.blogin:hover {
+   background-color: #2EFEF7;
+   color: black;
+}
+
+.bsignup:hover {
+    background-color: #2EFE9A;
+    color: #070719;
+}
+
+

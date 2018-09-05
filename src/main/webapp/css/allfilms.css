@@ -1,0 +1,99 @@
+body {
+    background-image: url("/images/homeback.gif");
+    background-size: 1200px 786px;
+}
+
+.buttonsborder {
+    border: 4px solid #0B0B3B;
+    border-radius: 16px;
+    width: 40%;
+    text-align: center;
+    background-color: #A9D0F5;
+    opacity: 0.8;
+    padding-top: 12px;
+    margin: auto;
+}
+
+form {
+    display: inline-block;
+}
+
+.borderfilm {
+    width: 21%;
+    height: 63%;
+    float: right;
+    opacity: 0.7;
+    text-align: center;
+    margin-top: 150px;
+}
+
+a {
+    font-size: 30px;
+    color: #3B0B17;
+}
+
+p {
+    padding-top: 20px;
+}
+
+button.bdelete {
+    font-size: 30px;
+    border: 5px solid black;
+    border-radius: 6px;
+    background-color: #81F781;
+
+}
+
+button.insert {
+    font-size: 30px;
+    border: 5px solid black;
+    border-radius: 6px;
+    background-color: #9F81F7;
+}
+button.logout {
+    font-size: 30px;
+    border: 4px solid black;
+    border-radius: 6px;
+    background-color: #D0FA58;
+}
+
+button.bhome {
+    font-size: 30px;
+    border: 4px solid black;
+    border-radius: 6px;
+    background-color: chartreuse;
+}
+
+button.bdelete:hover {
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: #04B404;
+}
+
+button.insert:hover {
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: #8000FF;
+}
+
+button.bhome:hover {
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: green;
+}
+
+button.logout:hover {
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: #FAAC58;
+}
+
+
+
+
+
+

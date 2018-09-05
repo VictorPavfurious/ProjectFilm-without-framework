@@ -5,6 +5,6 @@
     <title>error</title>
 </head>
 <body>
-<h1>Error!!</h1>
+<h1>Do not find page ! Error 404</h1>
 </body>
 </html>

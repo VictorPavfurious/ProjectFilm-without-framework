@@ -13,11 +13,23 @@ import java.util.function.Function;
 
 public class ProcessServlet extends HttpServlet {
 
-    Map<Request, Controller> controllerHashMap = new HashMap<>();
+   private Map<Request, Controller> controllerHashMap = new HashMap<>();
 
     @Override
     public void init() {
-        controllerHashMap.put(new Request("/servlet/getUsers", "GET"), Factory.getAllUsersController());
+        controllerHashMap.put(new Request("/servlet/getAllFilms", "GET"), Factory.getAllFilmsController());
+        controllerHashMap.put(new Request("/servlet/description", "GET"), Factory.getFilmByIdController());
+        controllerHashMap.put(new Request("/servlet/insertFilm", "POST"), Factory.insertFilmIntoDbController());
+        controllerHashMap.put(new Request("/servlet/insertFilm", "GET"), processView().apply("insertFilm"));
+        controllerHashMap.put(new Request("/servlet/deleteFilm", "POST"), Factory.deleteFilmController());
+        controllerHashMap.put(new Request("/servlet/deleteFilm", "GET"), processView().apply("deleteFilm"));
+        controllerHashMap.put(new Request("/servlet/signup", "POST"), Factory.createUserController());
+        controllerHashMap.put(new Request("/servlet/signup", "GET"), processView().apply("signup"));
+        controllerHashMap.put(new Request("/servlet/success", "GET"), processView().apply("success"));
+        controllerHashMap.put(new Request("/servlet/login", "POST"), Factory.loginUserController());
+        controllerHashMap.put(new Request("/servlet/login", "GET"), processView().apply("login"));
+        controllerHashMap.put(new Request("/servlet/home", "GET"), processView().apply("home"));
+        controllerHashMap.put(new Request("/servlet/logout", "POST"), Factory.logOutController());
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

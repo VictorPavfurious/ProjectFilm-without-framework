@@ -4,20 +4,24 @@ import com.victorp.service.GetUsersService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-public class GetAllUsersController implements Controller {
+public class LogOutController implements Controller {
 
     private GetUsersService getUsersService;
 
-    public GetAllUsersController(GetUsersService getUsersService) {
+    public LogOutController(GetUsersService getUsersService) {
         this.getUsersService = getUsersService;
     }
 
     @Override
     public void controller(HttpServletRequest request, HttpServletResponse response) {
-        request.setAttribute("users", getUsersService.getAllUser());
+        String username = request.getParameter("username");
         try {
-            request.getRequestDispatcher("/WEB-INF/view/getUsers.jsp").forward(request, response);
+            HttpSession session = request.getSession();
+            session.removeAttribute(username);
+            session.invalidate();
+            request.getRequestDispatcher("/WEB-INF/view/login.jsp").forward(request, response);
         } catch (Exception e) {
             throw new RuntimeException(e.getMessage());
         }

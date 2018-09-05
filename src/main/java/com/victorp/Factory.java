@@ -2,9 +2,13 @@ package com.victorp;
 
 
 
-import com.victorp.controller.GetAllUsersController;
+import com.victorp.controller.*;
+import com.victorp.dao.FilmDao;
+import com.victorp.dao.FilmDaoImpl;
 import com.victorp.dao.UserDao;
 import com.victorp.dao.UserDaoImpl;
+import com.victorp.service.GetFilmsService;
+import com.victorp.service.GetFilmsServiceImpl;
 import com.victorp.service.GetUsersService;
 import com.victorp.service.GetUsersServiceImpl;
 
@@ -25,13 +29,47 @@ public class Factory {
         }
     }
 
-    public static GetAllUsersController getAllUsersController() {
-        return new GetAllUsersController (getUsersService());
-    }
     public static GetUsersService getUsersService() {
-        return new GetUsersServiceImpl(userDao());
+        return new GetUsersServiceImpl(userDaoimpl());
     }
-    public static UserDao userDao() {
+
+    public static UserDao userDaoimpl() {
         return new UserDaoImpl(connection);
     }
+
+    public static GetAllFilmsController getAllFilmsController() {
+        return new GetAllFilmsController(getFilmsService());
+    }
+
+    public static GetFilmsService getFilmsService() {
+        return new GetFilmsServiceImpl(filmDaoImpl());
+    }
+
+    public static FilmDao filmDaoImpl() {
+        return new FilmDaoImpl(connection);
+    }
+
+    public static GetFilmByIdController getFilmByIdController() {
+        return new GetFilmByIdController(getFilmsService());
+    }
+
+    public static InsertFilmIntoDbController insertFilmIntoDbController() {
+        return new InsertFilmIntoDbController(getFilmsService());
+    }
+    public static DeleteFilmController deleteFilmController() {
+        return new DeleteFilmController(getFilmsService());
+    }
+    public static CreateUserController createUserController() {
+        return new CreateUserController(getUsersService());
+    }
+
+    public static LoginUserController loginUserController() {
+        return new LoginUserController(getUsersService());
+    }
+
+    public static LogOutController logOutController() {
+        return new LogOutController(getUsersService());
+    }
+
+
 }
